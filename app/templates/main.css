@@ -166,7 +166,10 @@ i {
 }
 
 table {
-    width: 99%
+    width: 99%;
+	max-width: 830px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 td, th {
