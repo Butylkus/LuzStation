@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+  <table border="1">
+   <caption>{{ preamble }}</caption>
+   <tr>
+    <th>Время</th>
+    <th>Сегодня</th>
+    <th>Завтра</th>
+    <th>Послезавтра</th>
+   </tr>
+   <tr>
+        <td>03:00</td>
+        <td><p class="fas {{ today[0][0][5] }}"> {{ today[0][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[0][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[0][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[0][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[0][0][5] }}"> {{ tomorow[0][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[0][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[0][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[0][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[0][0][5] }}"> {{ dayafter[0][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[0][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[0][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[0][0][3] }}</span></p></td>
+    </tr>
+   <tr>
+        <td>06:00</td>
+        <td><p class="fas {{ today[1][0][5] }}"> {{ today[1][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[1][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[1][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[1][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[1][0][5] }}"> {{ tomorow[1][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[1][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[1][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[1][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[1][0][5] }}"> {{ dayafter[1][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[1][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[1][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[1][0][3] }}</span></p></td>
+    </tr>
+   <tr>
+        <td>09:00</td>
+        <td><p class="fas {{ today[2][0][5] }}"> {{ today[2][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[2][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[2][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[2][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[2][0][5] }}"> {{ tomorow[2][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[2][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[2][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[2][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[2][0][5] }}"> {{ dayafter[2][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[2][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[2][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[2][0][3] }}</span></p></td>
+    </tr>
+      <tr>
+        <td>12:00</td>
+        <td><p class="fas {{ today[3][0][5] }}"> {{ today[3][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[3][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[3][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[3][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[3][0][5] }}"> {{ tomorow[3][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[3][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[3][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[3][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[3][0][5] }}"> {{ dayafter[3][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[3][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[3][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[3][0][3] }}</span></p></td>
+    </tr>
+      <tr>
+        <td>15:00</td>
+        <td><p class="fas {{ today[4][0][5] }}"> {{ today[4][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[4][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[4][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[4][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[4][0][5] }}"> {{ tomorow[4][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[4][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[4][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[4][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[4][0][5] }}"> {{ dayafter[4][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[4][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[4][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[4][0][3] }}</span></p></td>
+    </tr>
+    <tr>
+        <td>18:00</td>
+        <td><p class="fas {{ today[5][0][5] }}"> {{ today[5][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[5][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[5][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[5][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[5][0][5] }}"> {{ tomorow[5][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[5][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[5][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[5][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[5][0][5] }}"> {{ dayafter[5][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[5][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[5][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[5][0][3] }}</span></p></td>
+    </tr>
+   <tr>
+        <td>06:00</td>
+        <td><p class="fas {{ today[6][0][5] }}"> {{ today[6][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[6][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[6][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[6][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[6][0][5] }}"> {{ tomorow[6][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[6][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[6][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[6][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[6][0][5] }}"> {{ dayafter[6][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[6][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[6][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[6][0][3] }}</span></p></td>
+    </tr>
+   <tr>
+        <td>06:00</td>
+        <td><p class="fas {{ today[7][0][5] }}"> {{ today[7][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[7][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[7][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[7][0][3] }}</span></p></td>
+        <td><p class="fas {{ tomorow[7][0][5] }}"> {{ tomorow[7][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[7][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[7][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[7][0][3] }}</span></p></td>
+        <td><p class="fas {{ dayafter[7][0][5] }}"> {{ dayafter[7][0][0] }}</p>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[7][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[7][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[7][0][3] }}</span></p></td>
+    </tr>
+
+  </table>
+    
+</div>
+{% endblock %}

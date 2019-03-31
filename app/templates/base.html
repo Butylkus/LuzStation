@@ -1,0 +1,93 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block styles %}{{super()}}<link rel="stylesheet" href="{{url_for('css')}}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+{% endblock %}>
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+<div class="container">
+<!--
+<div class="navbar-header">
+<button type="button" class="navbar-toggle"
+data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">Жмякни!</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">Текущая погода</a>
+</div>
+-->
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        Погода <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/">Текущая</a></li>
+        <li><a class="dropdown-item" href="/forecast">Прогноз</a></li>
+    </ul>
+</div>
+
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+        Графики <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/graph/24">За сутки</a></li>
+        <li><a class="dropdown-item" href="/graph/72">За трое суток</a></li>
+        <li><a class="dropdown-item" href="/graph/168">За неделю</a></li>
+        <li><a class="dropdown-item" href="/graph/720">За месяц</a></li>
+    </ul>
+</div>
+</div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="preamble">
+        {{ localpreamble }}
+    </div>
+    <div class="localdata">
+        <p class="fas fa-temperature-low" id="temp"> {{ localweather[1]|safe }}</p>
+        <p class="fas fa-bong" id="hmdt"> {{ localweather[2]|safe }}%</p>
+        <p class="fas fa-compress-arrows-alt" id="pres"> {{ localweather[3]|safe }} ммрст</p>
+        <p class="card-text"><small class="text-muted">{{ localweather[0]|safe }} &copy;  DHT22, BMP280</small></p>
+    </div>
+</div>
+
+<div class="container">
+<!-- Карточка погоды -->
+    <div class="card mb-3" style="max-width: 90%;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+            <center>
+                <i class="fas {{ owmcast[6]|safe }}"></i>
+                <p class="card-text">Сейчас {{ owmcast[1]|safe }}</p>
+            </center>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{ owmcast[2]|safe }}&deg;</h2>
+                    <p class="card-text">Влажность {{ owmcast[3]|safe }}%</p>
+                    <p class="card-text">Давление {{ owmcast[4]|safe }} ммрст</p>
+                    <p class="card-text">Ветер {{ owmcast[5]|safe }} м/с</p>
+                    <p class="card-text"><small class="text-muted">{{ owmcast[0]|safe }} &copy; <a href="https://openweathermap.org/" target="_blank">OWM</a></small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    {{super()}}
+
+{% endblock %}>
+
+
+

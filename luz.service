@@ -1,0 +1,10 @@
+[Unit]
+Description=Weather monitoring system
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/pyprojects/luz-station.py
+
+[Install]
+WantedBy=multi-user.target

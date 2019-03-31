@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+
+  <table border="1">
+   <caption>{{ preamble }}</caption>
+   <tr>
+    <th>Время</th>
+    <th>Сегодня</th>
+    <th>Завтра</th>
+    <th>Послезавтра</th>
+   </tr>
+   
+   {% for i in range(0,8) %}
+   <tr>
+        <td>{{ intervals[i] }}</td>
+        <td><i class="fas {{ today[i][0][5] }}"></i>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ today[i][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ today[i][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ today[i][0][3] }}</span></p><p class="forecastdescr">{{ today[i][0][0] }}</p></td>
+        <td><i class="fas {{ tomorow[i][0][5] }}"></i>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ tomorow[i][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ tomorow[i][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ tomorow[i][0][3] }}</span></p><p class="forecastdescr">{{ tomorow[i][0][0] }}</p></td>
+        <td><i class="fas {{ dayafter[i][0][5] }}"></i>
+            <p class="inlineforecast"><span class="fas fa-temperature-low" id="temp">{{ dayafter[i][0][1] }} </span><span class="fas fa-bong" id="hmdt">{{ dayafter[i][0][2] }} </span><span class="fas fa-compress-arrows-alt" id="pres">{{ dayafter[i][0][3] }}</span></p><p class="forecastdescr">{{ dayafter[i][0][0] }}</p></td>
+    </tr>
+    {% endfor %}
+
+  </table>
+    
+</div>
+{% endblock %}

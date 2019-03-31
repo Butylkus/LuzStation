@@ -1,0 +1,179 @@
+body {
+    font-size: 2em;
+    line-height: 1;
+    color: #e6d780;
+    background-color: #02013e;
+    font-family: "Font Awesome 5 Free";
+}
+
+li {
+    display: block;
+}
+
+label {
+    display: inline-block;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.navbar-inverse {
+    background-color: #081b48;
+    border-color: #e9dd61;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #e6d780;
+}
+.navbar-inverse .navbar-brand {
+    color: #e6d780;
+}
+
+
+.preamble {
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-4 {
+    width: auto;
+}
+
+.small, small {
+    font-size: 65%;
+}
+
+.fa, .fas {
+    font-size: 120px;
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#temp, #hmdt, #pres {
+    font-size: 2em;
+    display: block;
+    padding: 8px 0 0 0px;;
+}
+
+.btn {
+    font-size: 18px;
+    color: #e6d780;
+    background-color: #081b48;
+    border: 2px solid #e6d780;
+}
+
+.btn-default:hover {
+
+    color: #081b48;
+    background-color: #e6d780;
+    border-color: #e6d780;
+
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover {
+    color: #081b48;
+    background-color: #e6d780;
+    border-color: #e6d780;
+}
+
+.dropdown-menu > li > a {
+    color: #e6d780;
+    background-color: #081b48;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #081b48;
+    text-decoration: none;
+    background-color: #e6d780;
+}
+
+.dropdown {
+    float: left;
+    font-size: 2em;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #e6d780;
+}
+
+.dropdown-menu {
+    font-size: 18px;
+    background-color: #081b48;
+    border: 2px solid #e6d780;
+}
+    
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+
+
+
+.inlineforecast > #temp, .inlineforecast > #hmdt, .inlineforecast > #pres {
+    display: block;
+    text-align: left;
+}
+
+.inlineforecast {
+    font-size: 0.4em;
+    display: inline-block;
+    margin: 0 0 4px;
+}
+
+td > .fa, td > .fas {
+    font-size: 2em;
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+}
+
+i {
+    float: left;
+    font-size: 3em;
+}
+
+table {
+    width: 99%
+}
+
+td, th {
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+}
+
+.forecastdescr {
+    font-size: 1.4em;
+}

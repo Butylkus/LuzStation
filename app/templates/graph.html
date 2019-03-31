@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block styles %}
+    {{super()}}<link rel="stylesheet" href="{{url_for('graphcss')}}">
+{% endblock %}>
+
+{% block content %}
+<div class="container">
+    <div class="preamble">
+        {{ preamble }}
+    </div>
+    {% for row in data %}
+    <object  type="image/svg+xml"  data="{{row}}"></object>
+    {% endfor %}
+</div>
+{% endblock %}

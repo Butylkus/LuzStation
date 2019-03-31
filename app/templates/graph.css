@@ -1,0 +1,272 @@
+object {
+    width: 90%;
+    }
+
+.svgBackground {
+    fill: #fff
+    }
+.graphBackground {
+    fill: #f0f0f0
+    }
+/* graphs titles */
+.mainTitle {
+    text-anchor: middle;
+    fill: #000;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.subTitle {
+    text-anchor: middle;
+    fill: #999;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.axis {
+    stroke: #000;
+    stroke-width: 1px
+    }
+.guideLines {
+    stroke: #666;
+    stroke-width: 1px;
+    stroke-dasharray: 5, 5
+    }
+.xAxisLabels {
+    text-anchor: middle;
+    fill: #000;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.yAxisLabels {
+    text-anchor: end;
+    fill: #000;
+    font-size: 12px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.xAxisTitle {
+    text-anchor: middle;
+    fill: #f00;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.yAxisTitle {
+    fill: #f00;
+    text-anchor: middle;
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.dataPointLabel {
+    fill: #000;
+    text-anchor: middle;
+    font-size: 10px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+.staggerGuideLine {
+    fill: none;
+    stroke: #000;
+    stroke-width: 0.5px
+    }
+.keyText {
+    fill: #000;
+    text-anchor: start;
+    font-size: 10px;
+    font-family: "Arial", sans-serif;
+    font-weight: normal
+    }
+/*&#13;
+default line styles&#13;
+*/
+.line1 {
+    fill: none;
+    stroke: #f00;
+    stroke-width: 1px
+    }
+.line2 {
+    fill: none;
+    stroke: #00f;
+    stroke-width: 1px
+    }
+.line3 {
+    fill: none;
+    stroke: #0f0;
+    stroke-width: 1px
+    }
+.line4 {
+    fill: none;
+    stroke: #fc0;
+    stroke-width: 1px
+    }
+.line5 {
+    fill: none;
+    stroke: #0cf;
+    stroke-width: 1px
+    }
+.line6 {
+    fill: none;
+    stroke: #f0f;
+    stroke-width: 1px
+    }
+.line7 {
+    fill: none;
+    stroke: #0ff;
+    stroke-width: 1px
+    }
+.line8 {
+    fill: none;
+    stroke: #ff0;
+    stroke-width: 1px
+    }
+.line9 {
+    fill: none;
+    stroke: #c66;
+    stroke-width: 1px
+    }
+.line10 {
+    fill: none;
+    stroke: #639;
+    stroke-width: 1px
+    }
+.line11 {
+    fill: none;
+    stroke: #390;
+    stroke-width: 1px
+    }
+.line12 {
+    fill: none;
+    stroke: #96F;
+    stroke-width: 1px
+    }
+/* default fill styles */
+.fill1 {
+    fill: #c00;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill2 {
+    fill: #00c;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill3 {
+    fill: #0c0;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill4 {
+    fill: #fc0;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill5 {
+    fill: #0cf;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill6 {
+    fill: #f0f;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill7 {
+    fill: #0ff;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill8 {
+    fill: #ff0;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill9 {
+    fill: #c66;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill10 {
+    fill: #639;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill11 {
+    fill: #390;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+.fill12 {
+    fill: #96F;
+    fill-opacity: 0.2;
+    stroke: none
+    }
+/* default line styles */
+.key1, .dataPoint1 {
+    fill: #f00;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key2, .dataPoint2 {
+    fill: #00f;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key3, .dataPoint3 {
+    fill: #0f0;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key4, .dataPoint4 {
+    fill: #fc0;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key5, .dataPoint5 {
+    fill: #0cf;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key6, .dataPoint6 {
+    fill: #f0f;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key7, .dataPoint7 {
+    fill: #0ff;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key8, .dataPoint8 {
+    fill: #ff0;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key9, .dataPoint9 {
+    fill: #c66;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key10, .dataPoint10 {
+    fill: #639;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key11, .dataPoint11 {
+    fill: #390;
+    stroke: none;
+    stroke-width: 1px
+    }
+.key12, .dataPoint12 {
+    fill: #96F;
+    stroke: none;
+    stroke-width: 1px
+    }
+.constantLine {
+    color: navy;
+    stroke: navy;
+    stroke-width: 1px;
+    stroke-dasharray: 9, 1, 1
+    }
