@@ -7,9 +7,9 @@
    <caption>{{ preamble }}</caption>
    <tr>
     <th>Время</th>
-    <th>Сегодня</th>
-    <th>Завтра</th>
-    <th>Послезавтра</th>
+    <th>Сегодня<br>{{ today[8] }}</th>
+    <th>Завтра<br>{{ tomorow[8] }}</th>
+    <th>Послезавтра<br>{{ dayafter[8] }}</th>
    </tr>
    
    {% for i in range(0,8) %}
