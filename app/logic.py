@@ -178,6 +178,7 @@ def get_forecast(offset=0):
         structured.append([echoer])
         echoer = []
     structured.append(start.strftime('%d.%m.%y')) #Это выведется как дата в прогнозе
+    structured.append(start.strftime('%A')) #Это выведется как день в прогнозе
     return(structured)
 
 
